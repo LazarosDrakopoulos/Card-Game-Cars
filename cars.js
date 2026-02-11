@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   const cards = [
     { title: "Lightning McQueen", img: "https://i.pinimg.com/originals/8e/e0/66/8ee06671993e7cef3f45e1b6957d79e3.jpg", text: "Lightning McQueen is a red race car, fast and determined. His journey highlights humility, teamwork, and lasting friendships." },
@@ -78,3 +79,4 @@ document.addEventListener("DOMContentLoaded", function () {
   const collectionModal = document.getElementById("collectionModal");
   collectionModal.addEventListener("show.bs.modal", renderCollection);
 });
+

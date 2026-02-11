@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let collection = JSON.parse(localStorage.getItem("myCollection")) || [];
 
-  // Payment selection
   let selectedMethod = null;
   const paymentOptions = document.querySelectorAll(".payment-option");
   const continueBtn = document.getElementById("continueBtn");
@@ -39,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     continueBtn.disabled = true;
   });
 
-  // Collect cards
+  
   document.addEventListener("click", e => {
     if (e.target.classList.contains("collect-card-btn")) {
       const modal = e.target.closest(".modal");
@@ -57,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Show collection
+  
   function renderCollection() {
     const carouselInner = document.querySelector("#collectionModal .carousel-inner");
     carouselInner.innerHTML = "";
